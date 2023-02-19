@@ -19,9 +19,18 @@ body
   color: white;
   /* background-color: black; */
 }
+.logo
+{
+  margin-left: 42px;
+}
 a
 {
   text-decoration: none;
+  color: azure;
+}
+ul 
+{
+  margin-right: 60px;
 }
 ul li
 {
@@ -38,6 +47,47 @@ li
   transition: 0.3s ease-in-out;
 }
 li:hover
+{
+  background: white;
+  color: black;
+}
+.content
+{
+  position: relative;
+  height: 200px;
+  width: 500px;
+  color: white;
+  margin: 20px;
+  padding: 20px;
+  transform: translate(30px,170px);
+}
+.section::after
+{
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.486);
+  width: 50px;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+h2
+{
+font-size: 65px;
+user-select: none;
+text-align: left;
+display: flex;
+justify-content: flex-start;
+}
+button
+{
+  color: beige;
+  background: transparent;
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: white 1px solid;
+}
+button:hover 
 {
   background: white;
   color: black;
