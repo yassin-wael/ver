@@ -22,6 +22,11 @@ body
 .logo
 {
   margin-left: 42px;
+  transition: 0.4s ease-in-out;
+}
+.logo:hover
+{
+  transform: scale(110%);
 }
 a
 {
@@ -66,7 +71,7 @@ a
   padding: 20px;
   transform: translate(30px,170px);
 }
-.section::after
+/* .section::after
 {
   content: "";
   position: absolute;
@@ -75,9 +80,52 @@ a
   top: 0;
   right: 0;
   height: 100%;
+} */
+.sidebar
+{
+  position: absolute;
+  background: rgba(0, 0, 0, 0.605);
+  height: 100%;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  right: 0;
+  top: 0;
+}
+.sidebar img
+{
+  width: 80%;
+  margin: 5px;
+  opacity: 50%;
+  transition: 0.3s ease-in-out;
+  margin-bottom: -3px;
+}
+.sidebar img:hover
+{
+  opacity: 100%;
+}
+.end 
+{
+  position: absolute;
+  bottom: 0;
+}
+.end img 
+{
+  margin-bottom: -3px;
 }
 h2
-{font-size: 65px;user-select: none;text-align: left;display: flex;justify-content: flex-start;margin-bottom: 15px;}
+{
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 80px;
+  margin: 10px 0 20px;
+  line-height: 70px;
+  user-select: none;
+  z-index: 1000;
+}
 button
 {
   background: transparent;
@@ -101,5 +149,21 @@ button
 .section::before
 {
   content:'';
-  background-image: linear-gradient(black);
+  position: absolute;
+  background-image: linear-gradient(to top black);
+  height: 60%;
+  background: linear-gradient(to top, #000, rgba(0,0,0,0));
+  width: 100%;
+  bottom: 0;
+}
+.hide
+{
+  display: none;
+}
+.releases
+{
+  position: relative;
+  height: fit-content;
+  width: 100%;
+  display: block;
 }
